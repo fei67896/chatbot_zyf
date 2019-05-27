@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+  <title>QA语料管理员入口</title>
+  <style type="text/css"></style>
+</head>
+<body>
+	
+	<div id="header">
+		<h1>QA语料管理员</h1>
+	</div>
+
+
+<div id="container">
+
+  <div id="tittle1">
+    <legend></legend>
+  </div>
+<div id="myform">
+<p></p>
+  <form action="/check" method="post">
+  	{% if answer %}
+  	<legend id="red">账号密码错误,请重新输入:</legend>
+  	{% else %}
+    <legend>请输入账号密码:</legend>
+    {% endif %}
+    <p><input name="username" placeholder="Username" value="{{ username }}"></p>
+    <p><input name="password" placeholder="Password" type="password"></p>
+    <p align="center">&nbsp&nbsp&nbsp<button type="submit">登陆</button></p>
+  </form>
+</div>
+<p>&nbsp </p>
+<p>&nbsp&nbsp&nbsp&nbsp 请校方、测试人员、开发人员将已有沙盘系统中未涉及到却应该涉及到的问题与答案，通过该系统提交。您提交后系统将自动更新沙盘语料沙,感谢您的支持</p>   
+<p>&nbsp </p>
+<p>&nbsp </p>
+<p>&nbsp </p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 如有问题请至Email:databijiaxing@163.com &nbsp开发人员：毕家兴 2018</p>
+</div>
+<div id="footer">
+copyright  &晨鸟科技
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+	background-image: url("img/g2.jpg");
+	background-size:cover;
+    background-attachment:fixed;
+    image-rendering: -webkit-optimize-contrast;
+}
+#question{
+	width: 400px;
+	height: 50px;
+}
+
+#answer{
+	width: 400px;
+	height: 350px
+}
+#containner{
+	width:400px;
+	margin: auto;
+	padding: auto;
+}
+#button{
+	text-align: center;
+}
+#header{
+	text-align: center;
+}
+#success{
+	text-align: center;
+    color: red;
+}

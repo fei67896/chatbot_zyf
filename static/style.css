@@ -1,0 +1,43 @@
+body{
+	background-image: url("img/google.jpg");
+	background-size:cover;
+    background-attachment:fixed;
+    image-rendering: -webkit-optimize-contrast;
+}
+#header
+{
+	background-color: #BDBDBD;
+	color: white;
+	text-align: center;
+}
+#container
+{
+	width:700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+#myform
+{
+	background-color: #EEE;
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#footer
+{
+	color: #F7FE2E;
+	
+}
+#tittle1
+{
+	text-align: center;
+
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#red
+{
+color: red;
+}

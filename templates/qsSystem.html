@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}"/>
+  <title>语料管理</title>
+  <style type="text/css"></style>
+</head>
+<body>
+    {% if answer %}
+      <div id="success">语料提交成功，请继续提交</div>
+    {% else %}
+   <div id="header">欢迎进入语料自治系统</div>
+    {% endif %}
+	
+	<br>
+  <br>
+<div  id="containner">
+  <form action="/question" method="post">
+    <label for="question">请输入语料缺失的问题：</label>
+    <textarea name="question" id="question" > </textarea>
+    <p></p>
+    <label for="answer">请输入参考答案：</label>
+    <textarea name="answer" id="answer"   ></textarea>
+    <p id="button"><input type="submit" value="提交"><p>
+  </form>
+<div>
+</body>
+</html>
